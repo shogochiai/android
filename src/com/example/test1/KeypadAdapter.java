@@ -9,7 +9,8 @@ import android.view.View.OnClickListener;
 
 public class KeypadAdapter extends BaseAdapter {
 	private Context mContext;
-
+	
+	//なんか増えてる
 	// Declare button click listener variable
 	private OnClickListener mOnButtonClick;
 

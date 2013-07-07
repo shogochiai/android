@@ -1,7 +1,7 @@
 //Input and Calculate
 package com.example.test1;
 
-private void ProcessKeypadInput(KeypadButton keypadButton) {
+ void ProcessKeypadInput(KeypadButton keypadButton) {
         // Toast.makeText(this, keypadButton.getText(),
         // Toast.LENGTH_SHORT).show();
         String text = keypadButton.getText().toString();

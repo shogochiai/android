@@ -1,15 +1,20 @@
 //Input and Calculate
 package com.example.test1;
 
- void ProcessKeypadInput(KeypadButton keypadButton) {
+private void ProcessKeypadInput {
+
+	//"(KeypadButton keypadButton)" is DELETED
+	
         // Toast.makeText(this, keypadButton.getText(),
         // Toast.LENGTH_SHORT).show();
         String text = keypadButton.getText().toString();
         String currentInput = userInputText.getText().toString();
+        //トーストとしてインプット出してみる
+        //Toast.makeText(this, currentInput, Toast.LENGTH_LONG).show();
 
         int currentInputLen = currentInput.length();
-        String evalResult = null;
-        double userInputValue = Double.NaN;
+        String evalResult = ""; //nullから""に変更
+        double userInputValue = Double.NaN;{
 
         switch (keypadButton) {
         case BACKSPACE: // Handle backspace
@@ -183,7 +188,7 @@ package com.example.test1;
 	        String left = mOperationStack.get(0);
 	        String operator = mOperationStack.get(1);
 	        String right = mOperationStack.get(2);
-	        String tmp = null;
+	        String tmp = ""; //nullから""へ
 	        if (!requestedByUser)
 	            tmp = mOperationStack.get(3);
 	
